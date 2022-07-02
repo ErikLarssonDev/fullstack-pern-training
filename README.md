@@ -1,4 +1,4 @@
-# Steps
+# Steps - Setup
 1. Create client & server folders
 2. In the client folder: `npx create-react-app . --template typescript`
 2. Diskutera postgreSQL vs firebase --> Välj postgreSQL
@@ -14,19 +14,26 @@
 12. /server: `npx nodemon index.ts`
 13. /server: Lägg till "database.sql".
 14. PG Admin: Create database WKIT_fullstack
-15. Använd "Query tool" för att CREATE TABLE users (...) 
+15. Lägg till db.ts, importera pool i index.ts
 16. Lägg till app route för test
 17. Testa med postman - resultat i terminalen
-18. Lägg till db.ts, importera pool i index.ts
-19. Skapa app route POST /users
-20. Skapa app route GET /users - Tänk på att åldern måste räknas ut.
-21. Kör DELETE FROM users; i pgAdmin för att rensa testdata
-22. Gå över till /client och sätt upp react router i App.tsx `npm install react-router-dom`
-23. Sätt upp pages (SignUp, UserList)
-24. Sätt upp components
-25. SignUpForm --> Kom ihåg att lägga till datavalidering och user feedback på slutet.
-26. Sätt upp http request, och använd dotenv.
-27. To calculate age: `npm install moment --save`
+# Steps - Implementation
+15. /database.sql: Skapa CREATE TABLE users (...)
+16. pgAdmin: Använd "Query tool" för att CREATE TABLE users (...) 
+17. Skapa app route POST /users
+18. Skapa app route GET /users - Tänk på att åldern måste räknas ut.
+19. Kör DELETE FROM users; i pgAdmin för att rensa testdata
+20. Gå över till /client och sätt upp react router i App.tsx `npm install react-router-dom`
+21. /pages: (SignUp, UserListPage)
+22. /components: SignUpForm --> Kom ihåg att lägga till datavalidering och user feedback på slutet.
+23. /index.css: center class.
+24. /SignUpForm.css: form-control class.
+25. Sätt upp http POST request, och använd REACT_APP_HOST.
+26. /components: UserList
+27. /components: User
+28. Sätt upp http GET request, och använd REACT_APP_HOST.
+29. /UserList.css: th, td formatting.
+30. To calculate age: `npm install moment --save`
 
 
 
