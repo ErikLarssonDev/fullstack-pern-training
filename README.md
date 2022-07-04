@@ -19,21 +19,37 @@
 17. Testa med postman - resultat i terminalen
 # Steps - Implementation
 14. Skapa en ny branch: `git branch user-list`, `git checkout user-list`
+
 15. /database.sql: Skapa CREATE TABLE users (...)
+
 16. pgAdmin: Använd "Query tool" för att CREATE TABLE users (...) 
+
 17. Skapa app route POST /users
+
 18. Skapa app route GET /users - Tänk på att åldern måste räknas ut.
+
 19. Kör DELETE FROM users; i pgAdmin för att rensa testdata
+
 20. Gå över till /client och sätt upp react router i App.tsx `npm install react-router-dom`
+
 21. /pages: (SignUp, UserListPage)
+
 22. /components: SignUpForm --> Kom ihåg att lägga till datavalidering och user feedback på slutet.
+
 23. /index.css: center class.
+
 24. /SignUpForm.css: form-control class.
+
 25. Sätt upp http POST request, och använd REACT_APP_HOST.
+
 26. /components: UserList
+
 27. /components: User
+
 28. Sätt upp http GET request, och använd REACT_APP_HOST.
+
 29. /UserList.css: th, td formatting.
+
 30. To calculate age: `npm install moment --save`
 
 
