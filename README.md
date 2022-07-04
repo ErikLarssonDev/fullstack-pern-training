@@ -18,6 +18,7 @@
 16. Lägg till app route för test
 17. Testa med postman - resultat i terminalen
 # Steps - Implementation
+14. Skapa en ny branch: `git branch user-list`, `git checkout user-list`
 15. /database.sql: Skapa CREATE TABLE users (...)
 16. pgAdmin: Använd "Query tool" för att CREATE TABLE users (...) 
 17. Skapa app route POST /users
